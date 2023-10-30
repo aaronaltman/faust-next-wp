@@ -22,10 +22,10 @@ export default async function Home() {
 
   return (
     <main>
-      <h2>Posts</h2>
+      <h2 className='text-center'>Posts</h2>
       <ul>
         {data.posts.nodes.map((post) => (
-          <li>
+          <li className='text-center'>
             <Link href={`/${post.slug}`}>{post.title}</Link>
           </li>
         ))}
